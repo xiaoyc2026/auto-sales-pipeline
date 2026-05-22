@@ -206,7 +206,7 @@ st.markdown("### 👋 About This Project")
 st.markdown("""
 **Role**: Data Engineering Intern · Short-Term Sales Forecasting & Reporting
 
-**Duration**: 5 months (Jan-May 2026)
+**Duration**: 3 months (Mar-Jun 2026)
 
 **My Contributions**:
 - 🏗️ Designed full 8-layer data warehouse from scratch
@@ -223,7 +223,7 @@ st.markdown("""
 - Surrogate key strategy to handle business renames without data migration
 
 📧 Contact: yaocong.xiao@gm.com
-🔗 Code: github.com/[your-username]/auto-sales-pipeline
+🔗 Code: github.com/xiaoyc026/auto-sales-pipeline
 """)
 
 st.markdown("---")
