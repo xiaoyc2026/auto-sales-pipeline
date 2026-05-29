@@ -123,7 +123,7 @@ issues = [
     },
     {
         "id": "ISSUE-009",
-        "title": "Cross-manufacturer MERGE creates orphan dim row",Restructured to a bucket-union design plus sentinel-row pattern (see Q14). Recovered 504,955 cars.
+        "title": "Cross-manufacturer MERGE creates orphan dim row",
         "severity": "🟡 WARN",
         "description": "Business marked NIO/ES9 → GAC MOTOR/ES9 but GAC MOTOR/ES9 doesn't exist in dim.",
         "fix": "Logged for next month's review; raw NIO/ES9 falls back to APPROVE_AS_NEW path.",
