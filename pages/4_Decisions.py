@@ -118,12 +118,12 @@ issues = [
         "id": "ISSUE-007",
         "title": "27% of combined volume lost in DWS wide table",
         "severity": "🔴 CRITICAL",
-        "description": "DWS used ways-anchored LEFT JOIN. Buckets present in combined but absent in ways → silent data loss.",
+        "description": "Original DWS logic used a ways-centered INNER JOIN. Combined buckets with no matching ways trim were silently dropped → 27% volume missing.",
         "fix": "Restructured to bucket-union design + sentinel-row pattern (Q14). Recovered 504,955 cars.",
     },
     {
         "id": "ISSUE-009",
-        "title": "Cross-manufacturer MERGE creates orphan dim row",
+        "title": "Cross-manufacturer MERGE creates orphan dim row",Restructured to a bucket-union design plus sentinel-row pattern (see Q14). Recovered 504,955 cars.
         "severity": "🟡 WARN",
         "description": "Business marked NIO/ES9 → GAC MOTOR/ES9 but GAC MOTOR/ES9 doesn't exist in dim.",
         "fix": "Logged for next month's review; raw NIO/ES9 falls back to APPROVE_AS_NEW path.",
